@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+ <title>Reregistration form</title>
+ <link rel="stylesheet" type="text/css" href="mystyle.css">
+ <script type="text/javascript" src="myscript.js"></script>
+</head>
+<body>
+<h2>Re-Registration Form</h2><hr><br>
+
+<form name="myform" action="/action_page.php" onsubmit='return validateform()'><br><p id="head"></p><br>
+Enrolment no: 
+<input type="number" name="eno" id='eno' ><br>
+<p id="p1"></p><br>
+Name of Applicant:
+<input type="text" name="fname" id='fname' placeholder="first name">
+<input type="text" name="lname" placeholder="last name"><br>
+<p id="p2"></p><br>
+Program code:
+<select name="course">
+ <option value="BCA">BCA</option>
+ <option value="MCA">MCA</option>
+ <option value="MA">MA</option>
+ <option value="BA">BA</option>
+ <option value="BCOM">BCOM</option>
+ <option value="MCOM">MCOM</option>
+</select><br><br>
+Reregistering for the year/semester:
+<input type="number" name="sem" id='sem'><br>
+<p id="p3"></p><br>
+E-Mail:
+<input type="text" id='email' name="email"><br>
+<p id="p4"></p><br>
+
+
+<fieldset>
+<legend>Fee Submission details:</legend>
+Draft no.:
+<input type="number" name="dno"><br><br>
+Draft date:
+<input type="date" name="date"><br><br>
+Amount:
+<input type="currency" name="amount"><br>
+</fieldset><br>
+
+<input type='submit' id="submit" value='SUBMIT'><br />
+</form>
+
+</body>
+</html>
+
